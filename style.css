@@ -1,0 +1,58 @@
+.cabecalho {
+    border: solid  1px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#saudacao {
+    border: solid 1px;
+
+}
+#nome-usuario { 
+    border: solid 1px;
+}
+
+main {
+    border: solid 1px;
+}
+/*
+colunas exatamente iguais, o ideal é:
+.cabecalho {
+    display: flex;
+}
+
+.cabecalho span {
+    flex: 1;
+}
+    ou
+
+    .cabecalho {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+*/
+nav {
+    border: solid 1px;
+    padding: 20px;
+    margin: 50px;
+}
+
+section {
+    border: solid 1px;
+    padding: 20px;
+    margin: 50px;
+}
+#tempo {
+    border: solid 1px;
+}
+
+#relogio {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

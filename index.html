@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!-- . Ela serve para avisar ao navegador que o documento utiliza o padrão HTML5, garantindo que a página seja renderizada corretamente e evitando erros de compatibilidade-->
+<html lang="pt-br"> <!-- é um código usado na criação de sites para informar aos navegadores e mecanismos de busca que o idioma principal daquela página web é o português falado no Brasil.-->
+<head>
+    <meta charset="UTF-8"> <!-- é usada no cabeçalho do código de um site para definir como o navegador deve ler e exibir os textos. Ela garante que acentos (como no português) e símbolos especiais sejam mostrados corretamente, evitando caracteres estranhos ou ilegíveis.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Essa linha de código HTML serve para tornar o seu site responsivo, ou seja, garante que ele se ajuste perfeitamente à tela de celulares e tablets.-->
+    <title>To Do Com JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+            <span id="saudacao">,
+                Olá<span id="nome-usuario">Fulano</span>
+    </span>
+    <!--<span id="nome-usuario">Fulano</span>-->
+    
+    <span id="tempo">Time:
+        <span id="relogio"></span>
+    </span>
+    </header>
+
+    <main>
+        <div id="lista de tarefas">
+            <h3>To Do List</h3>
+        </div>
+
+        <div>
+        <input type="text" placeholder="Digite sua tarefa">
+        <button>Adicionar</button>
+        </div>
+
+
+        <section>
+            <span>Date:</span><span id="data"></span>
+            <div><input type="checkbox" id="tarefa">
+            <label for="tarefa"></label>
+            </div>
+        </section>
+    </main>
+
+    
+</body>
+</html>
