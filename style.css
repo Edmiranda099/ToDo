@@ -56,3 +56,28 @@ section {
     justify-content: flex-end;
     align-items: center;
 }
+
+/*
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 10px;
+    margin: 10px 0;
+
+    background: #ddd;
+    border-radius: 20px;
+}
+
+.task label {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.excluir {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+*/

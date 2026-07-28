@@ -36,3 +36,42 @@ setInterval(atualizarRelogio, 1000);
 const dataMarcada = new Date();
 
 document.getElementById('data').textContent = dataMarcada.toLocaleDateString()
+
+const listaTarefas = document.getElementById("listaTarefas"); //const listaTarefas = document.querySelector("#listaTarefas");
+const btnAdicionar = document.getElementById("adicionar");
+const inputTarefa = document.getElementById("novaTarefa");
+
+btnAdicionar.addEventListener("click", () => { //addEventListener -> Adiciona um ouvinte de evento a um elemento HTML. O primeiro parâmetro é o tipo de evento (click, mouseover, keydown, etc.) e o segundo parâmetro é a função que será executada quando o evento ocorrer.
+
+    const tarefa = inputTarefa.value.trim();
+})
+
+/*
+const listaTarefas = document.getElementById("listaTarefas");
+const btnAdicionar = document.getElementById("adicionar");
+const inputTarefa = document.getElementById("novaTarefa");
+
+btnAdicionar.addEventListener("click", () => {
+
+    const texto = inputTarefa.value.trim();
+
+    if (!texto) return;
+
+    const tarefa = document.createElement("div");
+    tarefa.classList.add("task");
+
+    tarefa.innerHTML = `
+        <input type="checkbox">
+        <label>${texto}</label>
+        <button class="excluir">🗑️</button>
+    `;
+
+    tarefa.querySelector(".excluir").addEventListener("click", () => {
+        tarefa.remove();
+    });
+
+    listaTarefas.appendChild(tarefa);
+
+    inputTarefa.value = "";
+});
+*/
