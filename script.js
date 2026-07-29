@@ -43,7 +43,21 @@ const inputTarefa = document.getElementById("novaTarefa");
 
 btnAdicionar.addEventListener("click", () => { //addEventListener -> Adiciona um ouvinte de evento a um elemento HTML. O primeiro parâmetro é o tipo de evento (click, mouseover, keydown, etc.) e o segundo parâmetro é a função que será executada quando o evento ocorrer.
 
-    const tarefa = inputTarefa.value.trim();
+    const texto = inputTarefa.value.trim();
+
+    if (!texto) return; //é uma forma curta de verificar se a variável texto está vazia, nula ou contém um valor considerado falso (falsy) em JavaScript. Como funciona o !O operador ! significa negação lógica.
+
+    const tarefa = document.createElement("div"); //document.createElement("div") cria uma <div> e a variável tarefa passa a referenciar esse elemento criado.
+
+    tarefa.classList.add("task"); //você está adicionando a classe CSS "task" ao elemento HTML que está armazenado na variável tarefa.
+
+    //Todo elemento HTML possui uma propriedade chamada classList, que permite manipular as classes do elemento.
+
+    tarefa.innerHTML = `
+    <input type="checkbox">
+    <label>${texto}</label>
+    <button class="excluir">🗑️</button>
+    `
 })
 
 /*
