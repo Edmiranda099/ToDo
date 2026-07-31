@@ -81,3 +81,26 @@ section {
     cursor: pointer;
 }
 */
+
+.task {
+    display: flex;
+    align-items: center;
+    /*ustify-content: space-between;*/
+
+    padding: 10px;
+    margin: 10px 0;
+
+    background: #ddd;
+    border-radius: 20px;
+}
+
+.task label {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.excluir {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

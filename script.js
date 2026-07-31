@@ -57,9 +57,16 @@ btnAdicionar.addEventListener("click", () => { //addEventListener -> Adiciona um
     <input type="checkbox">
     <label>${texto}</label>
     <button class="excluir">🗑️</button>
-    `
-})
+    `;
 
+    tarefa.querySelector(".excluir").addEventListener("click" , () => {
+      tarefa.remove();
+    })
+
+    listaTarefas.appendChild(tarefa);
+
+    inputTarefa.value = "";
+})
 /*
 const listaTarefas = document.getElementById("listaTarefas");
 const btnAdicionar = document.getElementById("adicionar");
