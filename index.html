@@ -10,8 +10,7 @@
 <body>
     <header class="cabecalho">
             <span id="saudacao">,
-                Olá<span id="nome-usuario">Fulano</span>
-    </span>
+                Olá<span id="nome-usuario">Fulano</span></span>
     <!--<span id="nome-usuario">Fulano</span>-->
     
     <span id="tempo">Time:
@@ -19,23 +18,24 @@
     </span>
     </header>
 
+<div id="tituloToDo">            
+    <span>To Do List</span>
+    <img src="Img/baixados.jpg" alt="icone de lista de tarefas">
+</div>
+
+        <form class="form-tarefa">
+        <input type="text" id="novaTarefa" placeholder="Digite sua tarefa...">
+        <button id="adicionar" type="button">
+            Adicionar
+        </button>
+        </form>
+
     <main>
-        <div id="lista de tarefas">
-            <h3>To Do List</h3>
-        </div>
-
-        <div>
-        <input type="text" id="novaTarefa" placeholder="Digite sua tarefa">
-        <button id="adicionar">Adicionar</button>
-        </div>
-
-
         <section>
             <h3>Data: <span id="data"></span></h3>
             
             <div id="listaTarefas"></div>
         </section>
-
     </main>
 
 

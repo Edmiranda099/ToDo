@@ -1,3 +1,14 @@
+/* {
+    border: solid 1px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}-->*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d4d9e0;
+}
 .cabecalho {
     border: solid  1px;
     padding: 20px;
@@ -18,7 +29,30 @@
 }
 
 main {
+    /*border: solid 1px;*/
+    background-color: #e6f2f2;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+#tituloToDo {
     border: solid 1px;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    flex: 1;
+    margin-left: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: #333;
+}
+
+#tituloToDo img{
+    width: 50px;
+    height: 50px;
 }
 /*
 colunas exatamente iguais, o ideal é:
@@ -87,20 +121,66 @@ section {
     align-items: center;
     /*ustify-content: space-between;*/
 
-    padding: 10px;
-    margin: 10px 0;
+    padding: 12px 15px; 
+    margin-top: 10px;
 
-    background: #ddd;
-    border-radius: 20px;
+    background: #d7dce0;
+    border-radius: 12px;
 }
 
 .task label {
     flex: 1;
     margin-left: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    color: #333;
+
 }
 
 .excluir {
     border: none;
     background: transparent;
     cursor: pointer;
+    font-size: 20px;
+}
+
+
+.form-tarefa {
+    position: relative;
+    width: 450px;
+    margin: 20px auto;
+}
+
+#novaTarefa {
+    width: 96%;
+    height: 43px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    padding: 0 130px 0 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline:  none;
+}
+
+#adicionar {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 95px;
+    height: 43px;
+
+    border: none;
+    border-radius: 25px;
+
+    background-color: #e85d4f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#adicionar:hover {
+    background-color: #d94b3d;
 }

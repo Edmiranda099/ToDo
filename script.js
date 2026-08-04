@@ -67,6 +67,16 @@ btnAdicionar.addEventListener("click", () => { //addEventListener -> Adiciona um
 
     inputTarefa.value = "";
 })
+
+const form = document.querySelector("form");
+
+
+form.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    btnAdicionar.click();
+  }
+})
 /*
 const listaTarefas = document.getElementById("listaTarefas");
 const btnAdicionar = document.getElementById("adicionar");
