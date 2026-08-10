@@ -56,7 +56,7 @@ btnAdicionar.addEventListener("click", () => { //addEventListener -> Adiciona um
     tarefa.innerHTML = `
     <input type="checkbox">
     <label>${texto}</label>
-    <button class="excluir">🗑️</button>
+    <button class="excluir"><i class="fa-solid fa-trash"></i></button>
     `;
 
     tarefa.querySelector(".excluir").addEventListener("click" , () => {
