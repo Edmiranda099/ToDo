@@ -39,25 +39,25 @@ main {
 }
 
 #tituloToDo {
-    border: solid 1px;
-    padding: 20px;
-    margin: 20px;
-    margin-bottom: 10px;
-    height: 100px;
-    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 5px;
+
+    min-height: 180px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #logo {
-    height: 120px;
-    width: auto;
-    max-width: 100%;
+    width: 60%;
+    max-width: 455px;
+    height: auto;
 }
 
-#tituloToDo img{
-    width: 100%;
-    height: 100px;
-    vertical-align: middle;
-    object-fit: contain;
+#data {
+    color: #d98b8b;
 }
 /*
 colunas exatamente iguais, o ideal é:
