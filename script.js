@@ -60,6 +60,11 @@ btnAdicionar.addEventListener("click", () => { //addEventListener -> Adiciona um
     `;
 
     tarefa.querySelector(".excluir").addEventListener("click" , () => {
+
+      const nomeTarefa = tarefa.querySelector("label").textContent;
+
+      alert(`Parabéns! Você concluiu sua terefa: ${nomeTarefa}`);
+      
       tarefa.remove();
     })
 

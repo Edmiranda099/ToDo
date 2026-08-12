@@ -1,0 +1,13 @@
+package com.todolist.todo_backend.jar;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class TodoBackendApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
